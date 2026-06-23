@@ -18,9 +18,3 @@ Use governance-specific Cortex Code skills to assess governance maturity and fix
 - Generate and execute governance queries automatically
 - Classification, tagging, masking, access control analysis
 - Works across databases in the connected account
-
-## LinkedIn Post Angle
-"I asked Cortex Code: 'What is my governance maturity score?' It scanned my entire database, found 3 untagged PII columns, 2 tables without masking, and scored me at 45/100. Then it offered to fix everything."
-
-## Medium Article Section
-"Day 13: AI-powered governance — when Cortex Code becomes your compliance auditor."

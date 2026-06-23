@@ -19,9 +19,3 @@ Use Cortex Code's built-in data engineering skills to create an ingestion + tran
 - Data governance
 - App development
 - Performance optimization
-
-## LinkedIn Post Angle
-"Cortex Code isn't just autocomplete for SQL. It has specialized skills — for pipelines, governance, ML, and apps. Today I let the data engineering skill build my entire ingestion pipeline."
-
-## Medium Article Section
-"Day 12: Cortex Code skills in action — letting the agent build your data pipeline."

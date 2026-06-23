@@ -29,9 +29,3 @@ Generate rich, interactive outputs (charts, tables) from natural language and sh
 - 🍩 Pie Charts (composition)
 - 🔥 Heatmaps (patterns)
 - 🔀 Scatter Plots (correlations)
-
-## LinkedIn Post Angle
-"I asked 5 questions in Snowflake CoWork. It generated 5 different chart types — all interactive, all shareable, all connected to live data. No BI tool needed."
-
-## Medium Article Section
-"Day 10: Artifacts on Snowflake CoWork — when your conversation becomes the deliverable."

@@ -22,9 +22,3 @@ Set up the repo, create base tables, and define an AI-readiness checklist.
 - [ ] Media files are on Snowflake stages (not external URLs)
 - [ ] A VARIANT/ARRAY column exists for AI output storage
 - [ ] Row-level tenant identifiers exist for multi-tenant demos (Week 4)
-
-## LinkedIn Post Angle
-"What does 'AI-ready data' actually mean before you build agents on top of it?"
-
-## Medium Article Section
-Opening section of a long-form piece: "Why I'm building 30 practical Snowflake AI POCs in 30 days."

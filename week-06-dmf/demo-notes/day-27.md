@@ -12,9 +12,3 @@ Enable anomaly detection on DMF results and build a Streamlit DQ dashboard.
 2. Open Data Quality Manager in Snowsight to explore the UI
 3. Deploy `streamlit_dq_app/app.py` to Snowflake Workspaces
 4. Compare: Snowsight DQ Manager vs. your custom Streamlit dashboard
-
-## LinkedIn Post Angle
-"DMF + anomaly detection + Streamlit = a no-code data quality dashboard in Snowflake. It detects unusual row counts, stale data, and quality drifts — all without writing a single monitoring pipeline."
-
-## Medium Article Section
-"Day 27: From DMF to dashboard — building a no-code data quality monitoring system in Snowflake."

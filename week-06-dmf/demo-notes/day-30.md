@@ -30,9 +30,3 @@ Review Snowflake release notes, pick 3 features for your backlog, and publish th
 - Governance is not optional — it's the production layer
 - Multiple AI agents > one universal agent
 - DMF belongs after you build, not before
-
-## LinkedIn Post Angle
-"30 days. 6 POCs. 1 connected project. Here's everything I built in my Snowflake AI series — from multimodal AI to production-ready governance. And the 3 features I'm exploring next."
-
-## Medium Article Section
-"Day 30: What I learned building 30 practical Snowflake AI POCs — and what's next."

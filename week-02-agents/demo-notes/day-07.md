@@ -14,9 +14,3 @@ Create a semantic view that gives the agent business context, then compare answe
 
 ## Key Takeaway
 Semantic views store business definitions (what "revenue" means, what "win rate" means) in the database, so the AI agent doesn't have to guess.
-
-## LinkedIn Post Angle
-"Without semantic views, the agent guessed what 'revenue' means. With semantic views, it used the exact business definition. Same question, different quality."
-
-## Medium Article Section
-"Day 7: Why semantic views are the secret weapon for AI agents — teaching your data warehouse to speak business."

@@ -18,9 +18,3 @@ Add DMFs to all key tables — row count, freshness, nulls, duplicates, and cust
 
 ## Why DMF is Here (Day 26, Not Day 1)
 DMF is the quality layer for the AI outputs you already built. Without the AI pipeline, DMF has nothing to monitor. The story is: build exciting demos first, then make them trustworthy.
-
-## LinkedIn Post Angle
-"Your AI agent is only as trustworthy as its input data. Today I added 10 Data Metric Functions to monitor the tables feeding my Cortex Agents — row count, freshness, nulls, duplicates, and custom business rules. Trust starts with measurement."
-
-## Medium Article Section
-"Day 26: DMF for AI pipelines — why data quality monitoring belongs after you build, not before."

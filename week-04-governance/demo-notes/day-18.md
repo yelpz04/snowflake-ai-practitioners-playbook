@@ -32,9 +32,3 @@ One Service Principal
 - **Scalability**: 1000s of tenants through one Snowflake connection
 - **Simplicity**: no user-per-tenant management
 - **Security**: governance built into the platform, not the app layer
-
-## LinkedIn Post Angle
-"One Snowflake connection. Infinite tenants. Same AI agent. Different answers — because row access policies enforce isolation at the data layer. Multi-tenant Cortex Agents are now GA."
-
-## Medium Article Section
-"Day 18: The multi-tenant AI challenge — how Snowflake solves tenant isolation without managing thousands of users."

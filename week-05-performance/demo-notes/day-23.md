@@ -33,9 +33,3 @@ Create an observability architecture covering app traces, query health, agent ev
 │  └──────────┘ └──────────┘ └──────────────┘ │
 └──────────────────────────────────────────────┘
 ```
-
-## LinkedIn Post Angle
-"Observability for the AI Data Cloud. Observe by Snowflake brings app traces, query performance, agent events, and resource monitoring into one platform. Here's the architecture."
-
-## Medium Article Section
-"Day 23: Observe by Snowflake — building an observability strategy for AI workloads."

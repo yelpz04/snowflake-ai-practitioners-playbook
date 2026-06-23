@@ -29,9 +29,3 @@ Skills are NOT one-off prompts. They are:
 - Reusable across projects
 - Composable (skill calls skill)
 - Testable (verify behavior with test cases)
-
-## LinkedIn Post Angle
-"Stop writing one-off prompts for Cortex Code. Create SKILL.md files that encode your team's standards. Our SQL reviewer skill catches SELECT *, missing NOT NULL, risky DDL — every time, automatically."
-
-## Medium Article Section
-"Day 14: From prompts to plugins — building reusable Cortex Code skills that encode team knowledge."

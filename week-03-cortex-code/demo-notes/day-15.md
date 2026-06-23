@@ -20,9 +20,3 @@ Add safety hooks that intercept and block dangerous SQL before execution.
 - **Audit**: log all intercepted operations
 - **Modify**: inject context or alter inputs
 - **Control flow**: conditional execution
-
-## LinkedIn Post Angle
-"My AI agent tried to DROP a production table. The hook blocked it. Cortex Code hooks = guardrails for your AI developer. You wouldn't let a junior dev run DROP TABLE without review — why let an AI?"
-
-## Medium Article Section
-"Day 15: Safety nets for AI agents — building hooks that prevent your Cortex Code agent from going rogue."

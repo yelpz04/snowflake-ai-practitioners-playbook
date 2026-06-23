@@ -18,9 +18,3 @@ Add governance tags to semantic views and explore lineage/impact analysis.
 2. Add advanced modeling → metrics, relationships
 3. Integrate into dev tooling → Cortex Code, Git
 4. Scale to managed data products → tagging, lineage, sharing
-
-## LinkedIn Post Angle
-"A semantic view without governance is just a prettier table. Today I tagged metrics as KPIs, marked PII columns, and traced lineage — all on semantic views."
-
-## Medium Article Section
-"Day 8: Governing AI-ready data — tagging and lineage for semantic views."

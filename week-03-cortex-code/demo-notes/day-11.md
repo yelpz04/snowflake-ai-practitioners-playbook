@@ -18,9 +18,3 @@ Create a declarative pipeline project and use Cortex Code's DCM skill to validat
 - `manifest.yml` defines the project structure
 - Cortex Code DCM skill: analyze → plan → deploy
 - Infrastructure-as-code for Snowflake objects
-
-## LinkedIn Post Angle
-"I stopped writing DDL scripts. Now I declare what my Snowflake pipeline should look like in YAML, and Cortex Code figures out the diff. DCM Projects = Terraform for Snowflake."
-
-## Medium Article Section
-"Day 11: Declarative pipelines — when your AI agent manages your Snowflake infrastructure."

@@ -12,9 +12,3 @@ Build a basic Cortex Agent that answers business questions over sales, customer,
 2. Configure Cortex Agent using the agent config in `agents/`
 3. Test with sample questions
 4. Compare agent answers with/without semantic views (prep for Day 7)
-
-## LinkedIn Post Angle
-"I asked a Snowflake Cortex Agent: 'Which customers are at risk?' It queried 4 tables, joined the results, and gave me a ranked answer. No dashboard needed."
-
-## Medium Article Section
-"Day 6: Building your first Cortex Agent — from tables to natural language answers."

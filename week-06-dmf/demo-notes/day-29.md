@@ -16,9 +16,3 @@ Build a small autonomous SQL pipeline using concepts from the Snowflake HOL.
 - Autonomous = agent-driven pipeline orchestration
 - Agent decides when to run, what to check, how to recover
 - Combines: dynamic tables + tasks + Cortex Code + DMF
-
-## LinkedIn Post Angle
-"What if your SQL pipeline could decide when to run, what to check, and how to recover — without you writing the orchestration logic? That's autonomous SQL pipelines for AI agents. I just tried the Snowflake HOL."
-
-## Medium Article Section
-"Day 29: Autonomous SQL pipelines — when your data pipeline runs itself."

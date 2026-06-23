@@ -23,15 +23,3 @@ app.py              → Main Streamlit app (4 tabs)
 environment.yml     → Snowflake conda dependencies
 sql/                → SQL scripts (reference only, run separately)
 ```
-
-## LinkedIn Post Angle
-"Streamlit in Snowflake Workspaces just changed how I build data apps. File-based development, AI-assisted coding, containerized compute — all in Snowsight."
-
-## Medium Article Section
-"Day 5: From SQL queries to interactive app — deploying a multimodal AI dashboard in Snowflake Workspaces."
-
-## Screenshot Checklist
-- [ ] Workspace file explorer showing app.py
-- [ ] Running Streamlit app with Feedback tab
-- [ ] Running Streamlit app with Image AI Results tab
-- [ ] Running Streamlit app with Call/Video insights tabs

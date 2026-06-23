@@ -18,9 +18,3 @@ Query AI observability events and build a prompt/tool/cost telemetry dashboard.
 ## Key Tables
 - `SNOWFLAKE.LOCAL.AI_OBSERVABILITY_EVENTS` (or via `GET_AI_OBSERVABILITY_EVENTS`)
 - `SNOWFLAKE.ACCOUNT_USAGE.CORTEX_CODE_CLI_USAGE_HISTORY`
-
-## LinkedIn Post Angle
-"Every Cortex Code prompt is now logged. Not just 'who used it' — the actual prompt, model, tools called, latency, and tokens. All queryable with SQL. Here's the playbook for governing AI usage."
-
-## Medium Article Section
-"Day 24: The AI observability playbook — seeing every prompt, tool call, and dollar in Snowflake."
