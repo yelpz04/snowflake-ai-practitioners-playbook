@@ -4,7 +4,7 @@
 Use Snowflake CoWork as a personal work agent to ask business questions and take action.
 
 ## References
-- [Intelligence blog](https://www.snowflake.com/en/blog/snowflake-intelligence-work-agent/)
+- [Intelligence blog](https://www.snowflake.com/en/blog/snowflake-cowork-personal-work-agent/)
 
 ## What to Do
 1. Open Snowflake CoWork in Snowsight

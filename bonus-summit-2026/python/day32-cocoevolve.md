@@ -2,7 +2,7 @@
 
 ## Day 32 (Summit 2026): CoCoEvolve automatically evolved a Cortex Agent using genetic algorithms. Here's exactly what it changed — and how to run it on your own agents.
 
-*Part of **The Snowflake AI Practitioner's Playbook** — 37 working Snowflake AI implementations, all code included, updated through Summit 2026. [Full series →](link)*
+*Part of **The Snowflake AI Practitioner's Playbook** — 37 working Snowflake AI implementations, all code included, updated through Summit 2026. [Full series →](https://medium.com/@YOUR_MEDIUM_USERNAME/the-snowflake-ai-practitioners-playbook-series-index)*
 
 ---
 
@@ -504,9 +504,9 @@ conn.close()
 
 ## Series Navigation
 
-- **Day 31**: [ArcticSwarm Multi-Agent Deep Research ←](link)
+- **Day 31**: [ArcticSwarm Multi-Agent Deep Research ←](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/python/day31-arcticswarm.md)
 - **Day 32** (this article): CoCoEvolve — Self-Optimizing AI
-- **Day 33**: [Snowpipe Streaming + CoCo — Real-Time Pipelines →](link)
+- **Day 33**: [Snowpipe Streaming + CoCo — Real-Time Pipelines →](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/sql/day33-snowpipe.md)
 
 ---
 
@@ -514,7 +514,7 @@ conn.close()
 
 ---
 
-**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](link) · [LinkedIn](link)*
+**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](https://medium.com/@YOUR_MEDIUM_USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE)*
 
 
 *Tags: `Snowflake` `CoCoEvolve` `CoCo` `AI Optimization` `Cortex Agents` `Evolutionary AI`*

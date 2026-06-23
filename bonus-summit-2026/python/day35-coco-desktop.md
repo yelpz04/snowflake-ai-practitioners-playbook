@@ -2,7 +2,7 @@
 
 ### Snowflake Summit 2026 shipped CoCo Desktop, Cloud Agents, and an Agent SDK. I spent a week with all three. This is what changed — and what it means for how data teams build in 2026.
 
-*Part of **The Snowflake AI Practitioner's Playbook** — a series of deep dives into production-ready Snowflake AI. [Start from Part 1 →](link)*
+*Part of **The Snowflake AI Practitioner's Playbook** — a series of deep dives into production-ready Snowflake AI. [Start from Part 1 →](https://medium.com/@YOUR_MEDIUM_USERNAME/snowflake-ai-day-01)*
 
 ---
 
@@ -381,9 +381,9 @@ CoCo's edge is always the same: **it knows your actual Snowflake environment**. 
 
 ---
 
-*→ Next: [Day 36 — Snowflake App Runtime: From Conversation to Live URL in 5 Minutes](link)*
+*→ Next: [Day 36 — Snowflake App Runtime](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/python/day36-app-runtime.md)*
 
-*← Previous: [Day 34 — The Agentic Enterprise Security Framework](link)*
+*← Previous: [Day 34 — The Agentic Enterprise Security Framework](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/sql/day34-security.md)*
 
 ---
 
@@ -391,7 +391,7 @@ CoCo's edge is always the same: **it knows your actual Snowflake environment**. 
 
 ---
 
-**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](link) · [LinkedIn](link)*
+**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](https://medium.com/@YOUR_MEDIUM_USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE)*
 
 
 *Tags: `Snowflake` `CoCo` `Data Engineering` `AI Coding Agent` `CoCo Desktop` `Cloud Agents` `Agentic AI` `dbt` `Summit 2026`*

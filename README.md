@@ -7,7 +7,7 @@ A connected, portfolio-ready project built in public — one cohesive system, no
 All 37 articles are on Medium. All code is in this repo. Everything is updated through Summit 2026.
 
 > **Payal Chauhan** — Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems.
-> [Medium Series](link) · [LinkedIn](link)
+> [Medium Series](https://medium.com/@YOUR_MEDIUM_USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE)
 
 ---
 
@@ -92,7 +92,7 @@ ArcticSwarm + CoCoEvolve + App Runtime + ARD (Summit 2026)
 | 6 | Cortex Agents over structured data | [Cortex Agents docs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents) |
 | 7 | Semantic views for business-friendly answers | [Semantic views overview](https://docs.snowflake.com/en/user-guide/views-semantic/overview) |
 | 8 | Semantic view tagging + lineage | [Object tagging release](https://docs.snowflake.com/en/release-notes/2026/other/2026-05-05-semantic-views-object-tagging) |
-| 9 | Snowflake CoWork: answers to action | [CoWork blog](https://www.snowflake.com/en/blog/snowflake-intelligence-work-agent/) |
+| 9 | Snowflake CoWork: answers to action | [CoWork blog](https://www.snowflake.com/en/blog/snowflake-cowork-personal-work-agent/) |
 | 10 | Snowflake CoWork Artifacts | Artifacts feature (charts, tables, shareable outputs) |
 
 ### Week 3 — Cortex Code, Skills, DCM, Hooks

@@ -2,7 +2,7 @@
 
 ## Day 33 (Summit 2026): <10s end-to-end latency, AI enrichment on arrival, and CoCo skills that scaffold the whole thing. Here's the complete stack.
 
-*Part of **The Snowflake AI Practitioner's Playbook** — 37 working Snowflake AI implementations, all code included, updated through Summit 2026. [Full series →](link)*
+*Part of **The Snowflake AI Practitioner's Playbook** — 37 working Snowflake AI implementations, all code included, updated through Summit 2026. [Full series →](https://medium.com/@YOUR_MEDIUM_USERNAME/the-snowflake-ai-practitioners-playbook-series-index)*
 
 ---
 
@@ -459,9 +459,9 @@ CoCo will:
 
 ## Series Navigation
 
-- **Day 32**: [CoCoEvolve — Self-Optimizing AI ←](link)
+- **Day 32**: [CoCoEvolve — Self-Optimizing AI ←](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/python/day32-cocoevolve.md)
 - **Day 33** (this article): Snowpipe Streaming + CoCo Real-Time Pipelines
-- **Day 34**: [Agentic Enterprise Security Framework →](link)
+- **Day 34**: [Agentic Enterprise Security Framework →](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/sql/day34-security.md)
 
 ---
 
@@ -469,7 +469,7 @@ CoCo will:
 
 ---
 
-**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](link) · [LinkedIn](link)*
+**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](https://medium.com/@YOUR_MEDIUM_USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE)*
 
 
 *Tags: `Snowflake` `Snowpipe Streaming` `Real-Time Data` `CoCo` `Cortex AI` `Data Engineering`*

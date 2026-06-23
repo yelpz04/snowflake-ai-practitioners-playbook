@@ -2,7 +2,7 @@
 
 ### Every "build apps without infrastructure" promise has failed data teams. Snowflake App Runtime is the first one that actually delivers — because your app runs inside Snowflake, next to your data, with your governance already attached.
 
-*Part of **The Snowflake AI Practitioner's Playbook** — a series of deep dives into production-ready Snowflake AI. [Start from Part 1 →](link)*
+*Part of **The Snowflake AI Practitioner's Playbook** — a series of deep dives into production-ready Snowflake AI. [Start from Part 1 →](https://medium.com/@YOUR_MEDIUM_USERNAME/snowflake-ai-day-01)*
 
 ---
 
@@ -527,9 +527,9 @@ if question and st.button("Ask", type="primary"):
 
 ---
 
-*→ Next: [Day 37 — Publish Once, Available Everywhere: The Agent Discovery Protocol That Connects Your Cortex Agents to Every AI Interface](link)*
+*→ Next: [Day 37 — ARD: Publish Once, Available Everywhere](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/python/day37-ard.md)*
 
-*← Previous: [Day 35 — CoCo Desktop: The Data Engineering Agent That Outscores Claude Code](link)*
+*← Previous: [Day 35 — CoCo Desktop](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/python/day35-coco-desktop.md)*
 
 ---
 
@@ -537,7 +537,7 @@ if question and st.button("Ask", type="primary"):
 
 ---
 
-**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](link) · [LinkedIn](link)*
+**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](https://medium.com/@YOUR_MEDIUM_USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE)*
 
 
 *Tags: `Snowflake` `Streamlit` `App Runtime` `Vercel` `Data Apps` `CoCo` `Summit 2026` `Enterprise Apps` `Node.js`*

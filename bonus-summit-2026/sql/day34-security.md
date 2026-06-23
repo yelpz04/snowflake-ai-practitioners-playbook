@@ -2,7 +2,7 @@
 
 ## Day 34 (Summit 2026): The complete Data-Model-Agent security framework — Natoma MCP governance for 100+ tool servers, Horizon AI Guardrails with no middleware, and Trust Center AI Security Posture Management.
 
-*Part of **The Snowflake AI Practitioner's Playbook** — 37 working Snowflake AI implementations, all code included, updated through Summit 2026. [Full series →](link)*
+*Part of **The Snowflake AI Practitioner's Playbook** — 37 working Snowflake AI implementations, all code included, updated through Summit 2026. [Full series →](https://medium.com/@YOUR_MEDIUM_USERNAME/the-snowflake-ai-practitioners-playbook-series-index)*
 
 ---
 
@@ -513,9 +513,9 @@ DAY 2 OPERATIONS:
 
 ## Series Navigation
 
-- **Day 33**: [Snowpipe Streaming + CoCo Real-Time Pipelines ←](link)
+- **Day 33**: [Snowpipe Streaming + CoCo Real-Time Pipelines ←](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/sql/day33-snowpipe.md)
 - **Day 34** (this article): Agentic Enterprise Security Framework
-- **Start over**: [Day 1 — Setting Up the Revenue Ops Foundation →](link)
+- **Start over**: [Day 1 — Setting Up the Revenue Ops Foundation →](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/week-01-multimodal/demo-notes/day-01.md)
 
 ---
 
@@ -523,7 +523,7 @@ DAY 2 OPERATIONS:
 
 ---
 
-**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](link) · [LinkedIn](link)*
+**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](https://medium.com/@YOUR_MEDIUM_USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE)*
 
 
 *Tags: `Snowflake` `AI Security` `Agentic AI` `Natoma` `MCP` `Horizon Guardrails` `Trust Center` `Data Governance`*

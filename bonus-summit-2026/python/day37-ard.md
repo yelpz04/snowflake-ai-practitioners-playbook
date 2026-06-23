@@ -2,7 +2,7 @@
 
 ### You built a Cortex Agent that answers revenue questions perfectly. A sales rep in another team asks CoWork the same question. They get a generic answer — because nobody told CoWork your agent exists. ARD fixes that.
 
-*Part of **The Snowflake AI Practitioner's Playbook** — a series of deep dives into production-ready Snowflake AI. [Start from Part 1 →](link)*
+*Part of **The Snowflake AI Practitioner's Playbook** — a series of deep dives into production-ready Snowflake AI. [Start from Part 1 →](https://medium.com/@YOUR_MEDIUM_USERNAME/snowflake-ai-day-01)*
 
 ---
 
@@ -573,9 +573,9 @@ The Snowflake AI stack in June 2026 is genuinely impressive — not because any 
 
 ---
 
-*← Previous: [Day 36 — Snowflake App Runtime: From Conversation to Live URL in 5 Minutes](link)*
+*← Previous: [Day 36 — Snowflake App Runtime](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/python/day36-app-runtime.md)*
 
-*[↑ Back to Series Index](link)*
+*[↑ Back to Series Index](https://github.com/yelpz04/snowflake-ai-practitioners-playbook#series-arc)*
 
 ---
 
@@ -583,7 +583,7 @@ The Snowflake AI stack in June 2026 is genuinely impressive — not because any 
 
 ---
 
-**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](link) · [LinkedIn](link)*
+**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](https://medium.com/@YOUR_MEDIUM_USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE)*
 
 
 *Tags: `Snowflake` `ARD` `Agent Discovery` `Agentic AI` `Cortex Agents` `MCP` `CoWork` `Open Standards` `Enterprise AI` `Summit 2026`*

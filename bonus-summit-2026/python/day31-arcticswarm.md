@@ -2,7 +2,7 @@
 
 ## Day 31 (Summit 2026): ArcticSwarm's Gated BBS multi-agent system achieves 64.18% vs 47.08% accuracy — here's how to apply it to your Revenue Ops project.
 
-*Part of **The Snowflake AI Practitioner's Playbook** — 37 working Snowflake AI implementations, all code included, updated through Summit 2026. [Full series →](link)*
+*Part of **The Snowflake AI Practitioner's Playbook** — 37 working Snowflake AI implementations, all code included, updated through Summit 2026. [Full series →](https://medium.com/@YOUR_MEDIUM_USERNAME/the-snowflake-ai-practitioners-playbook-series-index)*
 
 ---
 
@@ -327,9 +327,9 @@ WHERE SEMANTIC_VIEW_NAME = 'SALES_METRICS_SV';
 
 ## Series Navigation
 
-- **Day 30**: [Final Portfolio Recap ←](link)
+- **Day 30**: [Final Portfolio Recap ←](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/week-06-dmf/demo-notes/day-30.md)
 - **Day 31** (this article): ArcticSwarm Multi-Agent Deep Research
-- **Day 32**: [CoCoEvolve — Self-Optimizing AI Systems →](link)
+- **Day 32**: [CoCoEvolve — Self-Optimizing AI Systems →](https://github.com/yelpz04/snowflake-ai-practitioners-playbook/blob/main/bonus-summit-2026/python/day32-cocoevolve.md)
 
 ---
 
@@ -337,7 +337,7 @@ WHERE SEMANTIC_VIEW_NAME = 'SALES_METRICS_SV';
 
 ---
 
-**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](link) · [LinkedIn](link)*
+**About the Author:** *Payal Chauhan is a Data Engineer specializing in Snowflake AI, Cortex Agents, and agentic data systems. She has hands-on experience with 20+ cutting-edge Snowflake features — from multimodal AI to multi-agent architectures. This series represents 37 end-to-end implementations built publicly to help data teams go from Snowflake announcement to production without the guesswork. Follow on [Medium](https://medium.com/@YOUR_MEDIUM_USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE)*
 
 
 *Tags: `Snowflake` `Multi-Agent AI` `ArcticSwarm` `Deep Research` `CoWork` `Enterprise AI`*
