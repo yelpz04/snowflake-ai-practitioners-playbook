@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 24: AI Observability Queries for Cortex Code
+-- AI Observability Queries for Cortex Code
 -- ============================================================
 -- Reference: https://medium.com/@rahul.reddy.ai/the-ai-observability-playbook-for-cortex-code
 -- Tables: SNOWFLAKE.LOCAL.AI_OBSERVABILITY_EVENTS

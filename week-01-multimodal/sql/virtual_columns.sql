@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 1 UPDATE: Virtual Columns in Data Model
+-- Virtual Columns in Data Model
 -- ============================================================
 -- Docs: https://docs.snowflake.com/en/sql-reference/virtual-columns
 -- Virtual columns are computed at query time, zero storage cost

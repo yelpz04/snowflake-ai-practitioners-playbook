@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 2: Create stages for media files (images, audio, video)
+-- Create stages for media files (images, audio, video)
 -- ============================================================
 
 USE SCHEMA REVENUE_OPS_AI.RAW;

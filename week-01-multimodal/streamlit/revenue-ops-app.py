@@ -1,5 +1,5 @@
 """
-Day 5: Streamlit in Snowflake Workspaces — Media + Feedback AI Analyzer
+Streamlit in Snowflake Workspaces — Media + Feedback AI Analyzer
 ========================================================================
 Deploy this app in Snowflake Workspaces (file-based workspace).
 Docs: https://docs.snowflake.com/en/developer-guide/streamlit/streamlit-in-workspaces/streamlit-in-workspaces-overview

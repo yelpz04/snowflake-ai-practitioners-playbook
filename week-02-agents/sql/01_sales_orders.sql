@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 6: Sales Orders + Customers for Cortex Agent
+-- Sales Orders + Customers for Cortex Agent
 -- ============================================================
 -- Tables already created in Week 1 (01_create_feedback_tables.sql)
 -- This file adds additional data and views for the agent.

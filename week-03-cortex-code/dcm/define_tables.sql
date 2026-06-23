@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 11: DCM Project — Declarative Table and Task Definitions
+-- DCM Project — Declarative Table and Task Definitions
 -- ============================================================
 -- Docs: https://www.snowflake.com/en/blog/declarative-snowflake-pipelines-dcm-projects-cortex-code/
 

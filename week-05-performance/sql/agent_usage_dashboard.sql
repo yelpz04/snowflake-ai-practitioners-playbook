@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 23: Agent Usage Dashboard Queries
+-- Agent Usage Dashboard Queries
 -- ============================================================
 -- For Observe by Snowflake and general observability
 

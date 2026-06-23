@@ -1,5 +1,5 @@
 """
-Day 15: Cortex Code Hook — Block Risky SQL Operations
+Cortex Code Hook — Block Risky SQL Operations
 ======================================================
 Docs: https://docs.snowflake.com/en/user-guide/cortex-code-agent-sdk/hooks
 

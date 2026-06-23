@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 7 UPDATE: Ontology-Grounded Agent Reasoning
+-- Ontology-Grounded Agent Reasoning
 -- ============================================================
 -- Reference: https://www.snowflake.com/en/blog/engineering/ontology-grounded-cortex-agents/
 -- Knowledge Graph + GraphRAG on top of Semantic Views

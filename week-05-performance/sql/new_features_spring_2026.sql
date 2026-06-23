@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 12: Dynamic Tables ADAPTIVE Refresh (also used in Day 22 Iceberg feature set)
+-- Dynamic Tables ADAPTIVE Refresh (also used in Day 22 Iceberg feature set)
 -- ============================================================
 -- Docs: https://docs.snowflake.cn/en/release-notes/2026/other/2026-05-26-dynamic-tables-adaptive-refresh-mode
 -- ADAPTIVE mode auto-switches between incremental and full refresh
@@ -29,7 +29,7 @@ AS
 -- No manual intervention needed
 
 -- ============================================================
--- Day 22 UPDATE: Iceberg + Horizon Catalog
+-- Iceberg + Horizon Catalog
 -- ============================================================
 -- Docs: https://docs.snowflake.com/en/user-guide/tables-iceberg-query-using-external-query-engine-snowflake-horizon
 -- Reference: https://www.snowflake.com/en/blog/engineering/bidirectional-interoperability-iceberg-snowflake-horizon-catalog/

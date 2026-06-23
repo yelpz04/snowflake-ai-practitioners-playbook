@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 18: Multi-Tenant Cortex Agents — Row Access Policy
+-- Multi-Tenant Cortex Agents — Row Access Policy
 -- ============================================================
 -- Docs: https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-multi-tenancy
 

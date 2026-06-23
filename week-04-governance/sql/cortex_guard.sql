@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 17 UPDATE: Cortex Guard Implementation
+-- Cortex Guard Implementation
 -- ============================================================
 -- Reference: https://medium.com/@beingabhishekmittal/guardrails-not-guesswork-the-complete-guide-to-cortex-guard-and-enterprise-ai-safety-8076e9405575
 -- Cortex Guard uses Llama Guard 3 to evaluate model outputs

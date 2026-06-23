@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 1: Create base tables for the Revenue Ops Assistant
+-- Create base tables for the Revenue Ops Assistant
 -- ============================================================
 
 USE ROLE SYSADMIN;

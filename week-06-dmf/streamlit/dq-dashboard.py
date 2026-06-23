@@ -1,5 +1,5 @@
 """
-Day 27: Streamlit Data Quality Dashboard
+Streamlit Data Quality Dashboard
 =========================================
 A no-code/low-code DQ dashboard powered by DMF results.
 Inspired by: https://adrianleexinhan.medium.com/building-a-no-code-data-quality-management-system-with-streamlit-and-snowflake-dmfs-and-genai-9458cec9c100

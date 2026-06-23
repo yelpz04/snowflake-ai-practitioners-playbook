@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 14 UPDATE: Cortex Code Security Skills
+-- Cortex Code Security Skills
 -- ============================================================
 -- Reference: https://www.snowflake.com/en/blog/engineering/security-management-cortex-code/
 

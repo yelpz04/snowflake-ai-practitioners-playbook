@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 8: Semantic View Tagging + Lineage
+-- Semantic View Tagging + Lineage
 -- ============================================================
 -- Docs: https://docs.snowflake.com/en/release-notes/2026/other/2026-05-05-semantic-views-object-tagging
 

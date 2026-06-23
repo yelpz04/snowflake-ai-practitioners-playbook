@@ -1,4 +1,4 @@
-# Day 17 UPDATED: Cortex Guard — Enterprise AI Safety in One Boolean Flag
+# Cortex Guard — Enterprise AI Safety in One Boolean Flag
 # Reference: https://medium.com/@beingabhishekmittal/guardrails-not-guesswork-the-complete-guide-to-cortex-guard-and-enterprise-ai-safety-8076e9405575
 
 import streamlit as st
@@ -8,7 +8,7 @@ from snowflake.snowpark.context import get_active_session
 session = get_active_session()
 
 st.title("🛡️ Cortex Guard Demo — Revenue Ops AI")
-st.caption("Day 17: Enterprise AI Safety with guardrails: true")
+st.caption("Enterprise AI Safety with guardrails: true")
 
 # ============================================================
 # 1. Guarded vs Unguarded side-by-side

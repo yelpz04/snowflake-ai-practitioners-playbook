@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 21: Query Acceleration Service (QAS) Test Queries
+-- Query Acceleration Service (QAS) Test Queries
 -- ============================================================
 -- Docs: https://www.snowflake.com/en/blog/engineering/query-acceleration-service-enabled-by-default/
 -- QAS is now enabled by default on warehouses.

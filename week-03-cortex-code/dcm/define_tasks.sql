@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 11: DCM Project — Task Definitions
+-- DCM Project — Task Definitions
 -- ============================================================
 
 -- Task: Refresh daily sales aggregation

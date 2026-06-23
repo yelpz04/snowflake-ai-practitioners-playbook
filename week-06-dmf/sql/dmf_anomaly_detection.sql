@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 27: DMF Anomaly Detection
+-- DMF Anomaly Detection
 -- ============================================================
 -- Docs: https://docs.snowflake.com/en/user-guide/data-quality-anomaly
 -- Requires: Enterprise Edition or higher

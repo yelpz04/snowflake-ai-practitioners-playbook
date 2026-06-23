@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 7: Semantic Views for Business-Friendly Agent Answers
+-- Semantic Views for Business-Friendly Agent Answers
 -- ============================================================
 -- Docs: https://docs.snowflake.com/en/user-guide/views-semantic/overview
 

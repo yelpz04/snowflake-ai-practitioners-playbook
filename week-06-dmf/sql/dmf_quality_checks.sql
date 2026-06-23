@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 26: Data Metric Functions (DMF) Quality Checks
+-- Data Metric Functions (DMF) Quality Checks
 -- ============================================================
 -- Docs: https://docs.snowflake.com/en/user-guide/data-quality-anomaly
 -- Requires: Enterprise Edition or higher for anomaly detection

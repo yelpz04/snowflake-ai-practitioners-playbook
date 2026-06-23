@@ -9,7 +9,7 @@
 USE SCHEMA REVENUE_OPS_AI.AI_OUTPUTS;
 
 -- ============================================================
--- DAY 2: Document / Image Extraction
+-- Document / Image Extraction
 -- ============================================================
 
 -- Extract structured data from an invoice image
@@ -76,7 +76,7 @@ SELECT
 
 
 -- ============================================================
--- DAY 3: Audio Sentiment Analysis
+-- Audio Sentiment Analysis
 -- ============================================================
 
 -- Analyze a customer support call recording for sentiment + escalation signals
@@ -128,7 +128,7 @@ CREATE OR REPLACE TABLE REVENUE_OPS_AI.AI_OUTPUTS.CALL_AI_INSIGHTS (
 
 
 -- ============================================================
--- DAY 4: Video Metadata Extraction
+-- Video Metadata Extraction
 -- ============================================================
 
 -- Analyze a product demo video for content intelligence
