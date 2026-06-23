@@ -1,0 +1,33 @@
+# DCM Project Manifest
+# Day 11: Declarative Snowflake Pipelines with DCM Projects + Cortex Code
+# Docs: https://www.snowflake.com/en/blog/declarative-snowflake-pipelines-dcm-projects-cortex-code/
+
+version: 1
+
+project:
+  name: revenue-ops-ai-pipeline
+  description: "Declarative pipeline for the Revenue Ops AI Assistant"
+
+databases:
+  - name: REVENUE_OPS_AI
+    schemas:
+      - name: RAW
+        description: "Raw ingested data"
+      - name: ANALYTICS
+        description: "Transformed analytics tables and semantic views"
+      - name: AI_OUTPUTS
+        description: "AI-generated insights and results"
+
+objects:
+  # Tables defined in define_tables.sql
+  - type: table
+    path: define_tables.sql
+
+  # Tasks defined in define_tasks.sql
+  - type: task
+    path: define_tasks.sql
+
+# Use Cortex Code DCM skill to:
+# 1. `dcm analyze` — validate changes before deployment
+# 2. `dcm plan` — preview what will change
+# 3. `dcm deploy` — apply changes to the Snowflake account
