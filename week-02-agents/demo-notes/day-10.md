@@ -1,13 +1,13 @@
-# Day 10: Snowflake Intelligence Artifacts
+# Day 10: Snowflake CoWork Artifacts
 
 ## Goal
 Generate rich, interactive outputs (charts, tables) from natural language and share them as Artifacts.
 
 ## References
-- Artifacts are rich interactive outputs from Snowflake Intelligence conversations
+- Artifacts are rich interactive outputs from Snowflake CoWork conversations
 
 ## What to Do
-1. In Snowflake Intelligence, ask questions that produce visualizations:
+1. In Snowflake CoWork, ask questions that produce visualizations:
    - "Show revenue trends over the last 6 months" → Line Chart
    - "Compare revenue by product category" → Bar Chart
    - "What is the product category mix for won deals?" → Pie Chart
@@ -31,7 +31,7 @@ Generate rich, interactive outputs (charts, tables) from natural language and sh
 - 🔀 Scatter Plots (correlations)
 
 ## LinkedIn Post Angle
-"I asked 5 questions in Snowflake Intelligence. It generated 5 different chart types — all interactive, all shareable, all connected to live data. No BI tool needed."
+"I asked 5 questions in Snowflake CoWork. It generated 5 different chart types — all interactive, all shareable, all connected to live data. No BI tool needed."
 
 ## Medium Article Section
-"Day 10: Artifacts on Snowflake Intelligence — when your conversation becomes the deliverable."
+"Day 10: Artifacts on Snowflake CoWork — when your conversation becomes the deliverable."

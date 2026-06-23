@@ -1,5 +1,5 @@
 -- ============================================================
--- Day 12 UPDATE: Dynamic Tables Adaptive Refresh
+-- Day 12: Dynamic Tables ADAPTIVE Refresh (also used in Day 22 Iceberg feature set)
 -- ============================================================
 -- Docs: https://docs.snowflake.cn/en/release-notes/2026/other/2026-05-26-dynamic-tables-adaptive-refresh-mode
 -- ADAPTIVE mode auto-switches between incremental and full refresh

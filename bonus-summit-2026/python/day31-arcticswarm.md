@@ -14,7 +14,7 @@ The core insight: **a single AI agent anchors on its first answer and stops expl
 
 ## The Problem ArcticSwarm Solves
 
-On Day 9, I built a Snowflake Intelligence client that answers questions like "Why did revenue drop?" The problem: when that single agent found a plausible answer in the web (an external outage), it stopped. It never checked the internal deployment logs that showed a simultaneous bug release.
+On Day 9, I built a Snowflake CoWork agent that answers questions like "Why did revenue drop?" The problem: when that single agent found a plausible answer in the web (an external outage), it stopped. It never checked the internal deployment logs that showed a simultaneous bug release.
 
 That's the **exploration trap** — premature consensus from a single reasoning path.
 

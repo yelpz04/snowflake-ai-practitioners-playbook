@@ -1,6 +1,6 @@
 # Migration Notes
 
-## Day 20: Migration Agent Observations
+## Day 19/20: Agentic ML + Migration Agent Observations
 
 ### What to Document After Running the Migration
 
