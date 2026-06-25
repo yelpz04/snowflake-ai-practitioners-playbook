@@ -1,0 +1,43 @@
+{
+  "spec": "ard/1.0",
+  "provider": {
+    "name": "Your Company",
+    "domain": "your-company.snowflakecomputing.com",
+    "contact": "data-team@your-company.com"
+  },
+  "resources": [
+    {
+      "id": "revenue-ops-agent",
+      "name": "Revenue Operations Agent",
+      "description": "AI agent for revenue pipeline analysis, customer health scoring, deal risk assessment, and churn prediction. Answers natural-language questions about customers, orders, support, and call intelligence.",
+      "type": "cortex-agent",
+      "version": "1.0",
+      "capabilities": [
+        "pipeline_analysis",
+        "customer_health",
+        "churn_prediction",
+        "deal_risk_assessment",
+        "natural_language_query"
+      ],
+      "representative_queries": [
+        "Which deals are most at risk this week?",
+        "What is the average customer health score by region?",
+        "Which customers are most likely to churn in the next 30 days?",
+        "Show me Q1 win rates by product category"
+      ],
+      "endpoint": {
+        "type": "snowflake-cortex-agent",
+        "agent_name": "REVENUE_OPS_AGENT",
+        "account": "YOUR_SNOWFLAKE_ACCOUNT"
+      },
+      "auth": {
+        "type": "snowflake-oauth"
+      },
+      "data_scope": "Revenue operations data: customers, orders, feedback, support, call intelligence",
+      "governance": {
+        "row_isolation": "tenant-based",
+        "pii_handling": "masked for non-admin roles"
+      }
+    }
+  ]
+}
