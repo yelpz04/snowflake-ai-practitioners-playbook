@@ -1,0 +1,2 @@
+# Exclude article markdown files from git
+**/article.md
