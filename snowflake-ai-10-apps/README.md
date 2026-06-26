@@ -21,7 +21,6 @@
 
 ```
 app-XX-name/
-├── article.md      ← Full Medium article (title, hook, architecture, code walkthrough)
 ├── app.py          ← Streamlit in Snowflake app (copy-paste ready)
 └── sql/
     └── setup.sql   ← Everything needed to run: tables, stages, views, roles
