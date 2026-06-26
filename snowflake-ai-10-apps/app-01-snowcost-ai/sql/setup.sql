@@ -13,47 +13,59 @@ USE DATABASE SNOWCOST_AI;
 USE SCHEMA    PUBLIC;
 
 -- 2. Semantic View for Cortex Analyst
---    Cortex Analyst queries this — not raw ACCOUNT_USAGE tables directly
-CREATE OR REPLACE SEMANTIC VIEW SNOWCOST_AI_SV
-  COMMENT = 'Business-friendly cost view for Cortex Analyst natural language queries'
-  TABLES (
-    TABLE SNOWFLAKE.ACCOUNT_USAGE.WAREHOUSE_METERING_HISTORY AS WAREHOUSE_COSTS
-      PRIMARY KEY (WAREHOUSE_ID)
+CREATE OR REPLACE SEMANTIC VIEW SNOWCOST_AI.PUBLIC.SNOWCOST_AI_SV
+   TABLES (
+    WAREHOUSE_COSTS AS SNOWFLAKE.ACCOUNT_USAGE.WAREHOUSE_METERING_HISTORY
+      PRIMARY KEY (WAREHOUSE_ID, START_TIME)
       COMMENT = 'Hourly credit consumption per warehouse'
   )
-  DIMENSIONS (
-    WAREHOUSE_COSTS.WAREHOUSE_NAME
-      COMMENT = 'Name of the Snowflake virtual warehouse',
-    WAREHOUSE_COSTS.START_TIME
-      COMMENT = 'Hour the metering window started (UTC)',
-    WAREHOUSE_COSTS.WAREHOUSE_TYPE
-      COMMENT = 'Warehouse type: Standard, Snowpark-Optimized, etc.'
+
+  FACTS (
+    WAREHOUSE_COSTS.CREDITS_USED AS CREDITS_USED,
+    WAREHOUSE_COSTS.CREDITS_USED_COMPUTE AS CREDITS_USED_COMPUTE,
+    WAREHOUSE_COSTS.CREDITS_USED_CLOUD_SERVICES AS CREDITS_USED_CLOUD_SERVICES
   )
+
+  DIMENSIONS (
+    WAREHOUSE_COSTS.WAREHOUSE_NAME AS WAREHOUSE_NAME
+      COMMENT = 'Name of the Snowflake virtual warehouse',
+
+    WAREHOUSE_COSTS.START_TIME AS START_TIME
+      COMMENT = 'Hour the metering window started',
+
+    WAREHOUSE_COSTS.END_TIME AS END_TIME
+      COMMENT = 'Hour the metering window ended'
+  )
+
   METRICS (
-    MEASURE WAREHOUSE_COSTS.CREDITS_USED
-      COMMENT = 'Total credits consumed this hour (compute + cloud services). 1 credit = approx $2-4 USD.'
-      DEFAULT AGGREGATION = SUM,
-    MEASURE WAREHOUSE_COSTS.CREDITS_USED_COMPUTE
-      COMMENT = 'Credits used for compute only',
-    MEASURE WAREHOUSE_COSTS.CREDITS_USED_CLOUD_SERVICES
-      COMMENT = 'Credits used for cloud services (metadata, auth, compilation)'
-  );
+    WAREHOUSE_COSTS.TOTAL_CREDITS_USED AS SUM(CREDITS_USED)
+      COMMENT = 'Total credits consumed',
+
+    WAREHOUSE_COSTS.TOTAL_COMPUTE_CREDITS_USED AS SUM(CREDITS_USED_COMPUTE)
+      COMMENT = 'Total compute credits consumed',
+
+    WAREHOUSE_COSTS.TOTAL_CLOUD_SERVICES_CREDITS_USED AS SUM(CREDITS_USED_CLOUD_SERVICES)
+      COMMENT = 'Total cloud services credits consumed'
+  )
+
+  COMMENT = 'Business-friendly cost view for Cortex Analyst natural language queries';
+
+
 
 -- 3. Pre-built cost summary view (used by anomaly detection in the app)
-CREATE OR REPLACE VIEW DAILY_WAREHOUSE_COSTS AS
+CREATE OR REPLACE VIEW SNOWCOST_AI.PUBLIC.DAILY_WAREHOUSE_COSTS AS
 SELECT
-    DATE_TRUNC('day', START_TIME)                AS cost_date,
+    DATE_TRUNC('day', START_TIME) AS cost_date,
     WAREHOUSE_NAME,
-    WAREHOUSE_TYPE,
-    SUM(CREDITS_USED)                            AS total_credits,
-    SUM(CREDITS_USED_COMPUTE)                    AS compute_credits,
-    SUM(CREDITS_USED_CLOUD_SERVICES)             AS cloud_service_credits
+    SUM(CREDITS_USED) AS total_credits,
+    SUM(CREDITS_USED_COMPUTE) AS compute_credits,
+    SUM(CREDITS_USED_CLOUD_SERVICES) AS cloud_service_credits
 FROM SNOWFLAKE.ACCOUNT_USAGE.WAREHOUSE_METERING_HISTORY
 WHERE START_TIME >= DATEADD('day', -90, CURRENT_TIMESTAMP())
-GROUP BY 1, 2, 3;
+GROUP BY 1, 2;
 
 -- 4. Rolling 30-day baseline + z-score anomaly detection
-CREATE OR REPLACE VIEW COST_ANOMALIES AS
+CREATE OR REPLACE VIEW SNOWCOST_AI.PUBLIC.COST_ANOMALIES AS
 WITH baseline AS (
     SELECT
         WAREHOUSE_NAME,
@@ -84,19 +96,38 @@ JOIN baseline b USING (WAREHOUSE_NAME)
 WHERE ABS(r.total_credits - b.avg_credits) / NULLIF(b.stddev_credits, 0) > 2
 ORDER BY z_score DESC;
 
--- 5. Resource monitor recommendations view
-CREATE OR REPLACE VIEW RESOURCE_MONITOR_GAPS AS
+-- 5. Resource monitor gaps 
+-- ► Run these two statements to populate (or schedule as a Task):
+SHOW WAREHOUSES;
+
+CREATE OR REPLACE TABLE SNOWCOST_AI.PUBLIC.RESOURCE_MONITOR_GAPS AS
 SELECT
-    W.NAME                                         AS warehouse_name,
-    W.SIZE                                         AS warehouse_size,
-    W.AUTO_SUSPEND                                 AS auto_suspend_seconds,
-    RM.NAME                                        AS resource_monitor,
-    CASE WHEN RM.NAME IS NULL THEN 'NO MONITOR'
-         ELSE 'MONITORED' END                      AS monitor_status
-FROM SNOWFLAKE.ACCOUNT_USAGE.WAREHOUSES W
-LEFT JOIN SNOWFLAKE.ACCOUNT_USAGE.RESOURCE_MONITORS RM
-    ON W.RESOURCE_MONITOR = RM.NAME
-WHERE W.DELETED IS NULL;
+    "name" AS warehouse_name,
+    "size" AS warehouse_size,
+    "type" AS warehouse_type,
+    "auto_suspend" AS auto_suspend_seconds,
+    "resource_monitor" AS resource_monitor,
+    CASE
+        WHEN "resource_monitor" IS NULL OR "resource_monitor" = 'null' THEN 'NO MONITOR'
+        ELSE 'MONITORED'
+    END AS monitor_status
+FROM TABLE(RESULT_SCAN(LAST_QUERY_ID()));
+
+
+-- Optional: daily refresh task
+CREATE OR REPLACE TASK SNOWCOST_AI.PUBLIC.REFRESH_RESOURCE_MONITOR_GAPS
+    WAREHOUSE = COMPUTE_WH
+    SCHEDULE  = 'USING CRON 0 6 * * * UTC'
+AS BEGIN
+    SHOW WAREHOUSES;
+    INSERT OVERWRITE INTO SNOWCOST_AI.PUBLIC.RESOURCE_MONITOR_GAPS
+    SELECT
+        "name", "size", "type", "auto_suspend", "resource_monitor",
+        CASE WHEN "resource_monitor" IS NULL OR "resource_monitor" = 'null'
+             THEN 'NO MONITOR' ELSE 'MONITORED' END
+    FROM TABLE(RESULT_SCAN(LAST_QUERY_ID()));
+END;
+ALTER TASK SNOWCOST_AI.PUBLIC.REFRESH_RESOURCE_MONITOR_GAPS RESUME;
 
 -- 6. Demo / mock data — mirrors WAREHOUSE_METERING_HISTORY for accounts
 --    without ACCOUNT_USAGE access (e.g., trial accounts, sandboxes).
@@ -115,6 +146,8 @@ INSERT INTO DEMO_METERING_HISTORY (WAREHOUSE_ID, WAREHOUSE_NAME, WAREHOUSE_TYPE,
 (2, 'ANALYTICS_WH', 'Standard', DATEADD('day',-3,CURRENT_DATE()), DATEADD('hour',-71,CURRENT_DATE()), 3.3,  3.1,  0.2),
 (3, 'ML_WH',        'Snowpark-Optimized', DATEADD('day',-1,CURRENT_DATE()), DATEADD('hour',-23,CURRENT_DATE()), 5.0, 4.8, 0.2),
 (3, 'ML_WH',        'Snowpark-Optimized', DATEADD('day',-4,CURRENT_DATE()), DATEADD('hour',-95,CURRENT_DATE()), 22.0, 21.5, 0.5); -- large spike
+
+
 
 -- 7. Grant to app role (adjust role name as needed)
 GRANT USAGE  ON DATABASE  SNOWCOST_AI TO ROLE SYSADMIN;

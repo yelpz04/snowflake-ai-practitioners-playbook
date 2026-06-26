@@ -1,14 +1,16 @@
 # SnowCost AI — Streamlit in Snowflake App
-# App 1 of 10: Cortex Analyst + AI_COMPLETE + Account Usage FinOps
-# Deploy as a Streamlit in Snowflake app in the SNOWCOST_AI database
 
 import streamlit as st
 import pandas as pd
 import altair as alt
 from snowflake.snowpark.context import get_active_session
-from snowflake.cortex import Complete
 
 session = get_active_session()
+
+def Complete(model, prompt):
+    return session.sql(
+        "SELECT SNOWFLAKE.CORTEX.COMPLETE(?, ?)", params=[model, prompt]
+    ).collect()[0][0]
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(page_title="SnowCost AI", page_icon="❄️", layout="wide")
@@ -33,10 +35,10 @@ with tab1:
     st.caption("Powered by Cortex Analyst — no SQL needed")
 
     example_questions = [
-        "Which warehouses spent the most credits in the last 7 days?",
-        "Show me daily credit usage trend for the past 30 days",
-        "Which warehouse type uses the most cloud service credits?",
-        "What was our peak credit consumption hour this month?",
+        "Which warehouses had the highest TOTAL_CREDITS_USED in the last 7 days?",
+        "Show me daily TOTAL_CREDITS_USED trend for the past 30 days",
+        "Which warehouse has the highest TOTAL_CLOUD_SERVICES_CREDITS_USED this month?",
+        "What was our peak TOTAL_COMPUTE_CREDITS_USED hour this month?",
     ]
     selected = st.selectbox("Try an example:", [""] + example_questions)
     question = st.text_input("Or type your own question:", value=selected)
@@ -126,12 +128,35 @@ with tab2:
     st.altair_chart(line, use_container_width=True)
 
     # Warehouses with no resource monitor
+    # RESOURCE_MONITOR_GAPS is a static TABLE — refresh via button or daily task
+    st.divider()
+    col_gap1, col_gap2 = st.columns([3, 1])
+    col_gap1.markdown("**Resource Monitor Coverage**")
+    if col_gap2.button("🔄 Refresh Now", help="Runs SHOW WAREHOUSES and repopulates the table"):
+        with st.spinner("Refreshing warehouse data..."):
+            try:
+                session.sql("SHOW WAREHOUSES").collect()
+                session.sql("""
+                    INSERT OVERWRITE INTO SNOWCOST_AI.PUBLIC.RESOURCE_MONITOR_GAPS
+                    SELECT
+                        \"name\", \"size\", \"type\", \"auto_suspend\", \"resource_monitor\",
+                        CASE WHEN \"resource_monitor\" IS NULL OR \"resource_monitor\" = 'null'
+                             THEN 'NO MONITOR' ELSE 'MONITORED' END
+                    FROM TABLE(RESULT_SCAN(LAST_QUERY_ID()))
+                """).collect()
+                st.success("Refreshed.")
+            except Exception as e:
+                st.error(f"Refresh failed: {e}")
+
     gaps = session.sql("""
-        SELECT warehouse_name, warehouse_size, auto_suspend_seconds, monitor_status
+        SELECT WAREHOUSE_NAME, WAREHOUSE_SIZE, WAREHOUSE_TYPE,
+               AUTO_SUSPEND_SECONDS, RESOURCE_MONITOR, MONITOR_STATUS
         FROM SNOWCOST_AI.PUBLIC.RESOURCE_MONITOR_GAPS
-        WHERE monitor_status = 'NO MONITOR'
+        WHERE MONITOR_STATUS = 'NO MONITOR'
     """).to_pandas()
-    if not gaps.empty:
+    if gaps.empty:
+        st.success("✅ All warehouses have a resource monitor — or table not yet populated (click Refresh).")
+    else:
         st.warning(f"⚠️ {len(gaps)} warehouses have no resource monitor:")
         st.dataframe(gaps, use_container_width=True)
 
