@@ -54,26 +54,33 @@ CREATE OR REPLACE TABLE CUSTOMER_HEALTH_SCORES (
 
 -- Semantic View for Cortex Agent natural language queries
 CREATE OR REPLACE SEMANTIC VIEW CHURN_INTELLIGENCE_SV
-  COMMENT = 'Customer health and churn risk — queryable via natural language'
-  TABLES (
-    TABLE CUSTOMER_HEALTH_SCORES AS HEALTH
-      PRIMARY KEY (CUSTOMER_ID)
-      COMMENT = 'ML-scored churn predictions, refreshed weekly'
-  )
-  DIMENSIONS (
-    HEALTH.CUSTOMER_NAME COMMENT = 'Customer company name',
-    HEALTH.RISK_LEVEL    COMMENT = 'High, Medium, or Low churn risk',
-    HEALTH.SCORED_AT     COMMENT = 'When this prediction was generated'
-  )
-  METRICS (
-    MEASURE HEALTH.CHURN_PROBABILITY
-      COMMENT = 'Probability of churn in next 30 days (0.0 to 1.0)'
-      DEFAULT AGGREGATION = AVG,
-    MEASURE HEALTH.OPEN_TICKETS
-      COMMENT = 'Number of currently open support tickets'
-      DEFAULT AGGREGATION = SUM
-  );
 
+TABLES (
+    HEALTH AS CUSTOMER_HEALTH_SCORES
+        PRIMARY KEY (CUSTOMER_ID)
+        COMMENT = 'ML-scored churn predictions, refreshed weekly'
+)
+
+DIMENSIONS (
+    HEALTH.CUSTOMER_NAME AS HEALTH.CUSTOMER_NAME
+        COMMENT = 'Customer company name',
+
+    HEALTH.RISK_LEVEL AS HEALTH.RISK_LEVEL
+        COMMENT = 'High, Medium, or Low churn risk',
+
+    HEALTH.SCORED_AT AS HEALTH.SCORED_AT
+        COMMENT = 'When this prediction was generated'
+)
+
+METRICS (
+    HEALTH.CHURN_PROBABILITY AS AVG(HEALTH.CHURN_PROBABILITY)
+        COMMENT = 'Probability of churn in next 30 days (0.0 to 1.0)',
+
+    HEALTH.OPEN_TICKETS AS SUM(HEALTH.OPEN_TICKETS)
+        COMMENT = 'Number of currently open support tickets'
+)
+
+COMMENT = 'Customer health and churn risk - queryable via natural language';
 -- ── Sample data ──────────────────────────────────────────────────────────────
 INSERT INTO CUSTOMERS (CUSTOMER_ID, CUSTOMER_NAME, INDUSTRY, COMPANY_SIZE, REGION, CONTRACT_VALUE, CREATED_DATE, CHURNED) VALUES
 ('C001', 'Acme Corp',        'Retail',     'Enterprise', 'North America', 45000, '2023-01-15', FALSE),
