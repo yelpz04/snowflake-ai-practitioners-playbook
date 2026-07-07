@@ -1,6 +1,4 @@
-# ChurnRadar Streamlit app — removes unused altair import that caused ModuleNotFoundError
-# Co-authored with CoCo
-# ChurnRadar — Snowpark ML Churn Prediction + AI Explanations
+# ChurnRadar : Snowpark ML Churn Prediction + AI Explanations
 # App 3 of 10: Snowpark ML + Cortex AI + Semantic Views
 
 import streamlit as st
